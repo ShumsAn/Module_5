@@ -13,7 +13,7 @@ class House:
         return self.name
 
     def __del__(self):
-        print(f'"{self}'" снесён, но он останется в истории")
+        print(f'"{self}" снесён, но он останется в истории')
 
 h1 = House('ЖК Эльбрус', 10)
 print(House.houses_history)
