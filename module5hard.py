@@ -57,7 +57,7 @@ class UrTube:
         if nickname in str(self.users):
             print(f"Пользователь {nickname} уже существует")
         else:
-            self.users.append(User(nickname, password, age))  # Добавление пользователя в список зарегестрированных
+            self.users.append(User(nickname, password, age))  # Добавление пользователя в список зарегистрированных
                                                                 # пользователей
             #print('зарегался')
             self.log_in(nickname,password)       # Передаем значения в метод входа в профиль
@@ -113,7 +113,7 @@ class UrTube:
                             print('Конец видео')
 
                 elif video in i.title and i.adult_mode == False:  #Если у видео нет возрастных ограничений
-                    for duration_ in range(1, i.duration + 1):
+                    for duration_ in range(1, i.duration + 1): #Передаем в значения в диапазоне длительности видео
                         sleep(1), print(duration_)
                     print('Конец видео')
 
